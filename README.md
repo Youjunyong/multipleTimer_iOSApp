@@ -28,7 +28,8 @@
 
 CoreData를 사용했다. 3개의 Attribute를 생성했는데, 
 
-![image-20210916141632223](/Users/yujun-yong/Library/Application Support/typora-user-images/image-20210916141632223.png)
+![image](https://user-images.githubusercontent.com/46234386/133558390-5a1c700e-1b2a-48bb-8927-abcd96fc2c43.png)
+
 
 
 
@@ -140,7 +141,8 @@ class DataManager{
 
 앱이 최초에 실행될 때, 사용자에게 Push알람 권한여부를 묻기 위해서 사용했다.
 
-![image-20210916142937128](/Users/yujun-yong/Library/Application Support/typora-user-images/image-20210916142937128.png)
+![image](https://user-images.githubusercontent.com/46234386/133558407-f31f8b67-1637-484b-a7de-1866c9118d83.png)
+
 
 
 
@@ -148,7 +150,8 @@ class DataManager{
 
 만약 스톱워치가 동작중인 상태에서 앱이 inActive상태가 되면 아직 동작중인 스톱워치가 있음을 사용자에게 알리기 위해 사용했다.
 
-![image-20210916143021411](/Users/yujun-yong/Library/Application Support/typora-user-images/image-20210916143021411.png)
+![image](https://user-images.githubusercontent.com/46234386/133558429-c9504960-954f-4907-8b5d-04fc35195844.png)
+
 
 ### SceneDelegate: sceneDidEnterBackground
 
