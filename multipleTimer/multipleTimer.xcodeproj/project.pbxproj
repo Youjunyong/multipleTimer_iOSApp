@@ -7,27 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1323F8326F1C5F8007AA773 /* TimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1323F8126F1C5F8007AA773 /* TimeTableViewCell.swift */; };
+		E1323F8426F1C5F8007AA773 /* TimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1323F8226F1C5F8007AA773 /* TimeTableViewCell.xib */; };
+		E1323F8626F1D557007AA773 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1323F8526F1D557007AA773 /* DataManager.swift */; };
+		E1323F8926F1DB97007AA773 /* multipleTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1323F8726F1DB97007AA773 /* multipleTimer.xcdatamodeld */; };
+		E1323F8D26F20583007AA773 /* TimeTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1323F8C26F20583007AA773 /* TimeTableViewCellDelegate.swift */; };
+		E1323FB626F22527007AA773 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1323FB526F22527007AA773 /* AddViewController.swift */; };
 		E1710E6326ECA08600A7B61A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1710E6226ECA08600A7B61A /* AppDelegate.swift */; };
 		E1710E6526ECA08600A7B61A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1710E6426ECA08600A7B61A /* SceneDelegate.swift */; };
 		E1710E6726ECA08600A7B61A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1710E6626ECA08600A7B61A /* ViewController.swift */; };
 		E1710E6A26ECA08600A7B61A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1710E6826ECA08600A7B61A /* Main.storyboard */; };
-		E1710E6D26ECA08600A7B61A /* multipleTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1710E6B26ECA08600A7B61A /* multipleTimer.xcdatamodeld */; };
 		E1710E6F26ECA08700A7B61A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1710E6E26ECA08700A7B61A /* Assets.xcassets */; };
-		E1710E7226ECA08700A7B61A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1710E7026ECA08700A7B61A /* LaunchScreen.storyboard */; };
-		E1710E7A26ECA41500A7B61A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1710E7926ECA41500A7B61A /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E1323F8126F1C5F8007AA773 /* TimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewCell.swift; sourceTree = "<group>"; };
+		E1323F8226F1C5F8007AA773 /* TimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeTableViewCell.xib; sourceTree = "<group>"; };
+		E1323F8526F1D557007AA773 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		E1323F8826F1DB97007AA773 /* multipleTimer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = multipleTimer.xcdatamodel; sourceTree = "<group>"; };
+		E1323F8C26F20583007AA773 /* TimeTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		E1323FB526F22527007AA773 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		E1710E5F26ECA08600A7B61A /* multipleTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = multipleTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1710E6226ECA08600A7B61A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1710E6426ECA08600A7B61A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E1710E6626ECA08600A7B61A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E1710E6926ECA08600A7B61A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E1710E6C26ECA08600A7B61A /* multipleTimer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = multipleTimer.xcdatamodel; sourceTree = "<group>"; };
 		E1710E6E26ECA08700A7B61A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E1710E7126ECA08700A7B61A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1710E7326ECA08700A7B61A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1710E7926ECA41500A7B61A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E13A0B5426F30495001F0388 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E1323F8226F1C5F8007AA773 /* TimeTableViewCell.xib */,
+				E1323FB526F22527007AA773 /* AddViewController.swift */,
+				E1323F8126F1C5F8007AA773 /* TimeTableViewCell.swift */,
+				E1710E6826ECA08600A7B61A /* Main.storyboard */,
+				E1710E6626ECA08600A7B61A /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E13A0B5526F304AE001F0388 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1323F8526F1D557007AA773 /* DataManager.swift */,
+				E1323F8726F1DB97007AA773 /* multipleTimer.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E13A0B5626F304C2001F0388 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E1323F8C26F20583007AA773 /* TimeTableViewCellDelegate.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E13A0B5726F30516001F0388 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				E1710E6426ECA08600A7B61A /* SceneDelegate.swift */,
+				E1710E6226ECA08600A7B61A /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		E1710E5626ECA08600A7B61A = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +104,12 @@
 		E1710E6126ECA08600A7B61A /* multipleTimer */ = {
 			isa = PBXGroup;
 			children = (
-				E1710E6226ECA08600A7B61A /* AppDelegate.swift */,
-				E1710E6426ECA08600A7B61A /* SceneDelegate.swift */,
-				E1710E6626ECA08600A7B61A /* ViewController.swift */,
-				E1710E6826ECA08600A7B61A /* Main.storyboard */,
-				E1710E7926ECA41500A7B61A /* CollectionViewCell.swift */,
+				E13A0B5726F30516001F0388 /* Delegates */,
+				E13A0B5426F30495001F0388 /* Views */,
+				E13A0B5626F304C2001F0388 /* Controllers */,
 				E1710E6E26ECA08700A7B61A /* Assets.xcassets */,
-				E1710E7026ECA08700A7B61A /* LaunchScreen.storyboard */,
 				E1710E7326ECA08700A7B61A /* Info.plist */,
-				E1710E6B26ECA08600A7B61A /* multipleTimer.xcdatamodeld */,
+				E13A0B5526F304AE001F0388 /* Models */,
 			);
 			path = multipleTimer;
 			sourceTree = "<group>";
@@ -130,7 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1710E7226ECA08700A7B61A /* LaunchScreen.storyboard in Resources */,
+				E1323F8426F1C5F8007AA773 /* TimeTableViewCell.xib in Resources */,
 				E1710E6F26ECA08700A7B61A /* Assets.xcassets in Resources */,
 				E1710E6A26ECA08600A7B61A /* Main.storyboard in Resources */,
 			);
@@ -143,11 +184,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1710E7A26ECA41500A7B61A /* CollectionViewCell.swift in Sources */,
 				E1710E6726ECA08600A7B61A /* ViewController.swift in Sources */,
 				E1710E6326ECA08600A7B61A /* AppDelegate.swift in Sources */,
+				E1323FB626F22527007AA773 /* AddViewController.swift in Sources */,
 				E1710E6526ECA08600A7B61A /* SceneDelegate.swift in Sources */,
-				E1710E6D26ECA08600A7B61A /* multipleTimer.xcdatamodeld in Sources */,
+				E1323F8626F1D557007AA773 /* DataManager.swift in Sources */,
+				E1323F8D26F20583007AA773 /* TimeTableViewCellDelegate.swift in Sources */,
+				E1323F8326F1C5F8007AA773 /* TimeTableViewCell.swift in Sources */,
+				E1323F8926F1DB97007AA773 /* multipleTimer.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,14 +204,6 @@
 				E1710E6926ECA08600A7B61A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E1710E7026ECA08700A7B61A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E1710E7126ECA08700A7B61A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -351,12 +387,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		E1710E6B26ECA08600A7B61A /* multipleTimer.xcdatamodeld */ = {
+		E1323F8726F1DB97007AA773 /* multipleTimer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				E1710E6C26ECA08600A7B61A /* multipleTimer.xcdatamodel */,
+				E1323F8826F1DB97007AA773 /* multipleTimer.xcdatamodel */,
 			);
-			currentVersion = E1710E6C26ECA08600A7B61A /* multipleTimer.xcdatamodel */;
+			currentVersion = E1323F8826F1DB97007AA773 /* multipleTimer.xcdatamodel */;
 			path = multipleTimer.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

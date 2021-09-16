@@ -11,7 +11,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
@@ -34,6 +33,28 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneWillResignActive(_ scene: UIScene) {
         // Called when the scene will move from an active state to an inactive state.
         // This may occur due to temporary interruptions (ex. an incoming phone call).
+        if #available(iOS 13.0, *){
+            if DataManager.shared.isOperate() {
+                UNUserNotificationCenter.current().getNotificationSettings{
+                    settings in if settings.authorizationStatus == UNAuthorizationStatus.authorized{
+                        let nContent = UNMutableNotificationContent()
+                        nContent.badge = 1
+                        nContent.title = "로컬 알림 메시지"
+                        nContent.subtitle = "확인해주세요."
+                        nContent.body = "아직 실행중인 스톱워치가 있습니다!"
+                        nContent.sound = UNNotificationSound.default
+                        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+                        let request = UNNotificationRequest(identifier: "wakeup", content: nContent, trigger: trigger)
+                        UNUserNotificationCenter.current().add(request)
+                    }else{
+                        print("사용자가 동의하지 않았습니다.")
+                    }
+                }
+            }
+
+        }else{
+            //iOS 13 이하 버전
+        }
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
@@ -47,7 +68,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
 
         // Save changes in the application's managed object context when the application transitions to the background.
-        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+//        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+        
+        DataManager.shared.saveContext()
+        // 저장하기
+        
     }
 
 

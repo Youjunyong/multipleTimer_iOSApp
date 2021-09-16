@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="149" id="KGk-i7-Jjw" customClass="TimeTableViewCell" customModule="multipleTimer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="315" height="149"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="315" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yev-H2-mnc">
+                        <rect key="frame" x="23" y="15" width="269" height="109"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Euv-zT-gLq">
+                                <rect key="frame" x="97.5" y="34" width="74" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gn1-uh-f4K">
+                                <rect key="frame" x="214" y="42.5" width="25" height="24"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" image="play.circle" catalog="system">
+                                    <color key="titleColor" red="1" green="0.50893836979999996" blue="0.5381973793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="timerButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="DZT-b9-5dj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKk-xZ-V3s">
+                                <rect key="frame" x="117.5" y="10" width="34.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pQm-CO-AKV">
+                                <rect key="frame" x="0.0" y="33.5" width="269" height="2"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="l9U-uu-L9h"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Gn1-uh-f4K" secondAttribute="trailing" constant="30" id="2XY-bE-jAF"/>
+                            <constraint firstItem="Gn1-uh-f4K" firstAttribute="centerY" secondItem="yev-H2-mnc" secondAttribute="centerY" id="CJq-co-aBJ"/>
+                            <constraint firstItem="pQm-CO-AKV" firstAttribute="bottom" secondItem="dKk-xZ-V3s" secondAttribute="bottom" constant="5" id="Hj5-Dv-eKq"/>
+                            <constraint firstItem="pQm-CO-AKV" firstAttribute="leading" secondItem="yev-H2-mnc" secondAttribute="leading" id="drC-Vx-d83"/>
+                            <constraint firstItem="dKk-xZ-V3s" firstAttribute="centerX" secondItem="yev-H2-mnc" secondAttribute="centerX" id="gV8-vk-vST"/>
+                            <constraint firstAttribute="trailing" secondItem="pQm-CO-AKV" secondAttribute="trailing" id="ge9-FF-tWz"/>
+                            <constraint firstItem="Euv-zT-gLq" firstAttribute="centerX" secondItem="yev-H2-mnc" secondAttribute="centerX" id="tw9-zE-ZOk"/>
+                            <constraint firstItem="dKk-xZ-V3s" firstAttribute="top" secondItem="yev-H2-mnc" secondAttribute="top" constant="10" id="wSO-K5-j3D"/>
+                            <constraint firstItem="Euv-zT-gLq" firstAttribute="centerY" secondItem="yev-H2-mnc" secondAttribute="centerY" id="xqS-R3-DWx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="yev-H2-mnc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="ckD-zp-GNd"/>
+                    <constraint firstAttribute="trailing" secondItem="yev-H2-mnc" secondAttribute="trailing" constant="23" id="cr3-it-Exw"/>
+                    <constraint firstAttribute="bottom" secondItem="yev-H2-mnc" secondAttribute="bottom" constant="25" id="krH-hB-KBS"/>
+                    <constraint firstItem="yev-H2-mnc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="23" id="yH5-vl-qQh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="timeLabel" destination="Euv-zT-gLq" id="gbx-Y9-0rI"/>
+                <outlet property="timerButton" destination="Gn1-uh-f4K" id="CYj-FN-1Z6"/>
+                <outlet property="titleLabel" destination="dKk-xZ-V3s" id="aVY-cQ-43V"/>
+                <outlet property="wrappingView" destination="yev-H2-mnc" id="rfQ-2h-FPl"/>
+            </connections>
+            <point key="canvasLocation" x="-326.81159420289856" y="151.67410714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="play.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
