@@ -10,7 +10,7 @@
 
 
 
-<img src="/Users/yujun-yong/Desktop/#5.gif" alt="#5" style="zoom:33%;" />
+<img src="https://user-images.githubusercontent.com/46234386/133558204-cc7074e7-071a-4f3c-aa01-24288c6afbad.gif" width = "30%"/>
 
 
 
